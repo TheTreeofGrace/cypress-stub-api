@@ -16,12 +16,10 @@ export default class Feedback extends Component {
     }
 
     handleMoodUpdate(input) {
-        console.log(input.target.value);
         this.setState({mood: input.target.value});
     }
 
     handleCommentsUpdate(input) {
-        console.log(input.target.value);
         this.setState({comments: input.target.value});
     }
 

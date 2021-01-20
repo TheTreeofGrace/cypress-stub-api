@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './pages/home/Home';
 
-class App extends Component {
-    render() {
+function App() {
         return (
             <BrowserRouter>
                 <Routes>
@@ -12,7 +10,6 @@ class App extends Component {
                 </Routes>    
             </BrowserRouter>
       );
-    }
 }
 
 export default App;
