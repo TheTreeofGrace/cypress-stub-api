@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { postFeedback } from '../../modules/feedbackApi';
 import '../../css/styleSheet.css';
-import ErrorFound from '../error/error'
+import ErrorFound from '../error/error';
+import Success from '../success/sucess';
 
 function Feedback() {
     const [feedback, setFeedback ] = useState({mood: '', otherMood: '', comments: ''});
@@ -10,11 +11,7 @@ function Feedback() {
     const [state, setState] = useState(0);
 
     const sendFeedback = async () => {
-        const sentFeedback = await postFeedback(feedback);
-        console.log(sentFeedback);
-        if(sentFeedback) {
-            setState(1);
-        }
+        setState(await postFeedback(feedback));
     };
 
     const handleChange = (event) => {
@@ -93,6 +90,9 @@ function Feedback() {
                 </div>
             </div>
         );
+    }
+    if(state === 2) {
+        return Success();
     }
     else {
         return ErrorFound();
