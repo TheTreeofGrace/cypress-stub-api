@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { postFeedback } from '../../modules/feedbackApi';
 import '../../css/styleSheet.css';
 import ErrorFound from '../error/error';
-import Success from '../success/sucess';
+import Success from '../success/success';
 
 function Feedback() {
     const [feedback, setFeedback ] = useState({mood: '', otherMood: '', comments: ''});

@@ -1,5 +1,5 @@
 {
-  "name": "aws-react-app-pipeline",
+  "name": "cypress-stub-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,9 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "cypress-open": "cypress open",
-    "test": "cypress run --project ./",
-    "test-dashboard": "cypress run --record --key $CYPRESS_RECORD_KEY",
-    "test-ci": "docker-compose up --exit-code-from cypress"
+    "cypress-run": "cypress run",
+    "cypress-ci": "docker-compose up --exit-code-from cypress"
   },
   "eslintConfig": {
     "extends": "react-app"

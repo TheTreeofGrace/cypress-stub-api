@@ -2,6 +2,5 @@
   "env": {
     "HOST": "http://localhost:3000"
   },
-  "watchForFileChanges": false,
-  "projectId": "abc123"
+  "watchForFileChanges": false
 }
