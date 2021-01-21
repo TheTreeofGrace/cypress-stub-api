@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build started on `date`
       - yarn build
-      - yarn test-ci
+      - yarn cypress-ci
   post_build:
     commands:
       - echo Build completed on `date`
