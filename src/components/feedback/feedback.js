@@ -83,7 +83,7 @@ function Feedback() {
                         </div>
                         <div className="row-25">
                             <div className="col-25">
-                                <input type="submit" value="Submit"/>
+                                <input data-qa="submitBtn" type="submit" value="Submit"/>
                             </div>
                         </div>
                     </form>
