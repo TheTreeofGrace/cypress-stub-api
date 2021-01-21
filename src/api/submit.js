@@ -15,7 +15,7 @@ const post = async (body) => {
     const headers = await getHeaders();
     try {
       const response = await axios.post(feedback_url, {httpMethod: 'POST', body: body}, headers);
-      return response.data;
+      return response;
     } catch (error) {
       throw error;
     }
