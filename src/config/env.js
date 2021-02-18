@@ -1,1 +1,1 @@
-export const feedback_url = process.env.REACT_APP_FEEDBACK_URL;
+export const feedback_url = 'your-backend-api';

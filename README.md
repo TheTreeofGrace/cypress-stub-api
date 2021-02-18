@@ -1,10 +1,9 @@
 # Quick Start
 
 This application uses `yarn` you are welcome to use `npm` if you wish.
-Install modules: `yarn`
-Copy `example.env` into a new file called `.env`
+Install modules needed: `yarn`
 Start application: `yarn start`
-Open Cypress: `yarn cypress-open` || `npx cypress open`
+Open Cypress: `yarn cypress-open`
 Run all Cypress Tests: `yarn cypress-run`
 
 
