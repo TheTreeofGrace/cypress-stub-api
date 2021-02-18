@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import playgroundLogo from '../../assets/images/playgroundLogo.jpeg';
+import feedbackLogo from '../../assets/images/feedbackLogo.jpg';
 
 export default class NavBar extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class NavBar extends Component {
                 <Navbar bg='dark' variant='dark'>
                     <Navbar.Brand>
                         <img
-                            src={playgroundLogo}
+                            src={feedbackLogo}
                             alt=""
                             width="300"
                         />{' '}
